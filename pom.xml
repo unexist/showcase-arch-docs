@@ -5,10 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>dev.unexist</groupId>
-    <artifactId>asciidoc-skeleton</artifactId>
+    <artifactId>arc42-showcase</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 
-    <name>asciidoc-skeleton</name>
+    <name>arc42-showcase</name>
     <url>httsp//unexist.dev</url>
 
     <properties>
@@ -71,7 +71,7 @@
                         <!-- Uses the <img src="data:image/png;base64> syntax for diagrams -->
                         <data-uri/>
                         <!-- Allows access to remote files (eg. code on external GitHub) -->
-                        <!-- imagesdir>./images</imagesdir-->
+                        <imagesdir>./images</imagesdir>
                         <allow-uri-read>true</allow-uri-read>
                     </attributes>
                     <requires>

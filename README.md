@@ -1,3 +1,3 @@
-# asciidoc-skeleton
+# arc42-showcase
 
-This project is just a common starter for asciidoc based projects with confluence support
+This project is a showcase for my experiments with the arc42 template
