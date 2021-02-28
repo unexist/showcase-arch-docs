@@ -50,18 +50,13 @@ image:08-Crosscutting-Concepts-Structure-EN.png["Possible topics for crosscuttin
 ****
 
 
-=== _<Concept 1>_
+=== Logging
 
-_<explanation>_
+To ensure the same format and handling of logging, this project generally uses
+SLF4J.
 
+http://www.slf4j.org/
 
+=== Error handling
 
-=== _<Concept 2>_
-
-_<explanation>_
-
-...
-
-=== _<Concept n>_
-
-_<explanation>_
+Error handling will be done with simple http status codes.
