@@ -11,6 +11,7 @@ help:
 
 # Docs
 PDFOUT := ARC42.pdf
+HTMLOUT := arc42-template.html
 
 pdf:
 	asciidoctor-pdf src/main/asciidoc/arc42-template.adoc -D . -o $(PDFOUT) -a imagesdir=images
@@ -28,7 +29,7 @@ open-pdf:
 	open $(PDFOUT)
 
 open:
-	open ./target/static/documentation/arc42-template.html
+	open ./target/static/documentation/$(HTMLOUT)
 
 .DEFAULT_GOAL := docs
 docs:
@@ -38,7 +39,7 @@ docs:
 	@echo "**********************************************************"
 	@echo "*                                                        *"
 	@echo "* Documentation can be found here:                       *"
-	@echo "* ./target/static/documentation/arc42-template.adoc.html *"
+	@echo "* ./target/static/documentation/$(HTMLOUT)               *"
 	@echo "*                                                        *"
 	@echo "**********************************************************"
 	@echo
