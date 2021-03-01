@@ -10,6 +10,23 @@ help:
 	@echo
 
 # Docs
+PDFOUT := ARC42.pdf
+
+pdf:
+	asciidoctor-pdf src/main/asciidoc/arc42-template.adoc -D . -o $(PDFOUT) -a imagesdir=images
+
+	@echo
+	@echo "******************************************************"
+	@echo "*                                                    *"
+	@echo "* Documentation can be found here:                   *"
+	@echo "* $(PDFOUT)                                          *"
+	@echo "*                                                    *"
+	@echo "******************************************************"
+	@echo
+
+open-pdf:
+	open $(PDFOUT)
+
 open:
 	open ./target/static/documentation/arc42-template.html
 
