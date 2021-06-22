@@ -14,7 +14,7 @@ PDFOUT := ARC42.pdf
 HTMLOUT := arc42-template.html
 
 pdf:
-	asciidoctor-pdf src/main/asciidoc/arc42-template.adoc -D . -o $(PDFOUT) -a imagesdir=images
+	asciidoctor-pdf arc42/src/main/asciidoc/arc42-template.adoc -D . -o $(PDFOUT) -a imagesdir=images
 
 	@echo
 	@echo "******************************************************"
@@ -29,17 +29,17 @@ open-pdf:
 	open $(PDFOUT)
 
 open:
-	open ./target/static/documentation/$(HTMLOUT)
+	open ./arc42/target/static/documentation/$(HTMLOUT)
 
 .DEFAULT_GOAL := docs
 docs:
-	@mvn -f pom.xml clean generate-resources
+	@mvn -f arc42/pom.xml clean generate-resources
 
 	@echo
 	@echo "**********************************************************"
 	@echo "*                                                        *"
 	@echo "* Documentation can be found here:                       *"
-	@echo "* ./target/static/documentation/$(HTMLOUT)               *"
+	@echo "* ./arc42/target/static/documentation/$(HTMLOUT)         *"
 	@echo "*                                                        *"
 	@echo "**********************************************************"
 	@echo
