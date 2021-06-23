@@ -94,6 +94,7 @@
                             <attributes>
                                 <toc>left</toc>
                                 <sectanchors>true</sectanchors>
+                                <source-highlighter>highlight.js</source-highlighter>
                             </attributes>
                         </configuration>
                     </execution>
