@@ -1,6 +1,6 @@
 = Showcase for architecture documentation
 
-This project is a showcase for my experiments with the various templates
+This project is a showcase for my experiments with the various templates.
 
 == Modules
 
