@@ -1,3 +1,4 @@
 name: showcase-architecture-documentation
 title: Showcase for architecture documentation
 version: 0.1.0
+start_page: ROOT:README.adoc
