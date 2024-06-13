@@ -1,0 +1,59 @@
+This diagram has been generated with go-structurizr 
+[https://github.com/krzysztofreczek/go-structurizr]
+
+@startuml
+
+title Service components
+
+skinparam {
+  shadowing false
+  arrowFontSize 10
+  defaultTextAlignment center
+  wrapWidth 200
+  maxMessageSize 100
+}
+hide stereotype
+top to bottom direction
+
+scale 4096 width
+
+skinparam rectangle<<_GROUP>> {
+  FontColor #ffffff
+  BorderColor #ffffff
+}
+
+skinparam artifact<<ADAPTER>> {
+  BackgroundColor #2d69b7
+  FontColor #ffffff
+  BorderColor #000000
+}
+
+skinparam usecase<<DOMAIN>> {
+  BackgroundColor #ffffff
+  FontColor #000000
+  BorderColor #000000
+}
+
+skinparam database<<INFRASTRUCTURE>> {
+  BackgroundColor #c8c8c8
+  FontColor #000000
+  BorderColor #000000
+}
+
+rectangle 0ADAPTER <<_GROUP>> {
+	artifact "==adapter.TodoResource\n<size:10>[component]</size>\n\nadapter component" <<ADAPTER>> as 3081293365
+}
+rectangle 30812933651DOMAIN <<_GROUP>> {
+	usecase "==domain.TodoService\n<size:10>[component]</size>\n\ndomain component" <<DOMAIN>> as 2425084387
+}
+3081293365 .[#000000].> 2425084387 : ""
+rectangle 24250843872INFRASTRUCTURE <<_GROUP>> {
+	database "==infrastructure.TodoFakeRepository\n<size:10>[component]</size>\n\ninfrastructure component" <<INFRASTRUCTURE>> as 2184463684
+}
+2425084387 .[#000000].> 2184463684 : ""
+rectangle 24250843872DOMAIN <<_GROUP>> {
+	usecase "==domain.Todo\n<size:10>[component]</size>\n\ndomain component" <<DOMAIN>> as 542314480
+}
+2425084387 .[#000000].> 542314480 : ""
+2184463684 .[#000000].> 542314480 : ""
+@enduml
