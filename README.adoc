@@ -1,7 +1,18 @@
 = Showcase for architecture documentation
 
-This project is a showcase for my experiments with the various templates.
+This project is a showcase for various types of architecture documentation.
 
 == Modules
 
-- arch42
+- *todo-service-arc42* - Showcase for arc42
+- *todo-service-go-structurizr* - Showcase for Structurizr on Golang
+- *todo-service-goadesign* - Showcase for Goadesign on Golang
+
+This project holds a showcase for Structurizr related things.
+
+== Links
+
+- https://arc42.de
+- https://threedots.tech/post/auto-generated-c4-architecture-diagrams-in-go/
+- https://github.com/krzysztofreczek/go-structurizr
+- https://github.com/goadesign/model
