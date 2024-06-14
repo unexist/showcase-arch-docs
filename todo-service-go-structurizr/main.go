@@ -1,5 +1,5 @@
 //
-// @package Showcase-Structurizr-Golang
+// @package Showcase-Architecture-Documentation
 //
 // @file Todo main
 // @copyright 2023-present Christoph Kappel <christoph@unexist.dev>

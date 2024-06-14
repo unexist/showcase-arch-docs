@@ -1,5 +1,5 @@
 //
-// @package Showcase-Structurizr-Golang
+// @package Showcase-Architecture-Documentation
 //
 // @file Todo resource
 // @copyright 2023-present Christoph Kappel <christoph@unexist.dev>
@@ -19,8 +19,8 @@ import (
 	swaggerfiles "github.com/swaggo/files"
 	ginSwagger "github.com/swaggo/gin-swagger"
 
-	"github.com/unexist/showcase-structurizr-golang/docs"
-	"github.com/unexist/showcase-structurizr-golang/domain"
+	"github.com/unexist/showcase-architecture-documentation/docs"
+	"github.com/unexist/showcase-architecture-documentation/domain"
 
 	"github.com/gin-gonic/gin"
 )

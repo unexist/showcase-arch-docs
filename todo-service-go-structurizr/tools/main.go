@@ -1,8 +1,8 @@
 //
-// @package Showcase-Structurizr-Golang
+// @package Showcase-Architecture-Documentation
 //
 // @file Structurizr base
-// @copyright 2023-present Christoph Kappel <christoph@unexist.dev>
+// @copyright 2024-present Christoph Kappel <christoph@unexist.dev>
 // @version $Id$
 //
 // This program can be distributed under the terms of the Apache License v2.0.
@@ -15,9 +15,9 @@ import (
 	structScaper "github.com/krzysztofreczek/go-structurizr/pkg/scraper"
 	structView "github.com/krzysztofreczek/go-structurizr/pkg/view"
 
-	"github.com/unexist/showcase-structurizr-golang/adapter"
-	"github.com/unexist/showcase-structurizr-golang/domain"
-	"github.com/unexist/showcase-structurizr-golang/infrastructure"
+	"github.com/unexist/showcase-architecture-documentation/adapter"
+	"github.com/unexist/showcase-architecture-documentation/domain"
+	"github.com/unexist/showcase-architecture-documentation/infrastructure"
 	"os"
 )
 

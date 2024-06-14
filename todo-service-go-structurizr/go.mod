@@ -1,4 +1,4 @@
-module github.com/unexist/showcase-structurizr-golang
+module github.com/unexist/showcase-architecture-documentation
 
 go 1.22.1
 

@@ -1,5 +1,5 @@
 //
-// @package Showcase-Structurizr-Golang
+// @package Showcase-Architecture-Documentation
 //
 // @file Todo fake repository
 // @copyright 2023-present Christoph Kappel <christoph@unexist.dev>
@@ -16,7 +16,7 @@ import (
 
 	"braces.dev/errtrace"
 
-	"github.com/unexist/showcase-structurizr-golang/domain"
+	"github.com/unexist/showcase-architecture-documentation/domain"
 )
 
 type TodoFakeRepository struct {

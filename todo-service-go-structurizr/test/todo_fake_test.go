@@ -1,5 +1,5 @@
 //
-// @package Showcase-Structurizr-Golang
+// @package Showcase-Architecture-Documentation
 //
 // @file Todo tests for fake repository
 // @copyright 2023-present Christoph Kappel <christoph@unexist.dev>
@@ -24,9 +24,9 @@ import (
 	"net/http/httptest"
 	"strconv"
 
-	"github.com/unexist/showcase-structurizr-golang/adapter"
-	"github.com/unexist/showcase-structurizr-golang/domain"
-	"github.com/unexist/showcase-structurizr-golang/infrastructure"
+	"github.com/unexist/showcase-architecture-documentation/adapter"
+	"github.com/unexist/showcase-architecture-documentation/domain"
+	"github.com/unexist/showcase-architecture-documentation/infrastructure"
 )
 
 /* Test globals */
