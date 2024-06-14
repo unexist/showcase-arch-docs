@@ -30,33 +30,31 @@ open-swagger:
 	open http://localhost:8080/swagger/index.html
 
 c4:
-	@$(SHELL) -c "cd todo-service-gin/tools; ./$(EXE_STRUCT) && plantuml *.plantuml"
+	@$(SHELL) -c "cd tools; ./$(EXE_STRUCT) && plantuml *.plantuml"
 
 # Build
 build-struct:
-	@$(SHELL) -c "cd todo-service-gin/tools; GO111MODULE=on; go mod download; go build -o $(EXE_STRUCT)"
+	@$(SHELL) -c "cd tools; GO111MODULE=on; go mod download; go build -o $(EXE_STRUCT)"
 
 build-gin:
-	@$(SHELL) -c "cd todo-service-gin; GO111MODULE=on; go mod download; go build -o $(EXE_GIN)"
+	@$(SHELL) -c "GO111MODULE=on; go mod download; go build -o $(EXE_GIN)"
 
 # Analysis
 vet-gin:
-	@$(SHELL) -c "cd todo-service-gin; go vet"
+	@$(SHELL) -c "go vet"
 
 # Run
 run-gin:
-	@$(SHELL) -c "cd todo-service-gin; ./$(EXE_GIN)"
+	@$(SHELL) -c "./$(EXE_GIN)"
 
 # Tests
 test-gin:
-	@$(SHELL) -c "cd todo-service-gin; go test -v ./test"
+	@$(SHELL) -c "go test -v ./test"
 
 # Helper
 clear:
-	rm -rf todo-service-gin/$(EXE_GIN)
+	rm -rf ./$(EXE_GIN)
 
 install:
-	go install braces.dev/errtrace/cmd/errtrace@latest
-	go install golang.org/x/tools/cmd/deadcode@latest
 	go install goa.design/model/cmd/mdl@latest
 	go install goa.design/model/cmd/stz@latest
