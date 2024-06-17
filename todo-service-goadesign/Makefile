@@ -16,7 +16,7 @@ generate:
 struct-gen:
 	stz gen $(PKG)/model -out $(OUT_FILE)
 
-struct-put: --guard-ID --guard-KEY --guard-SECRET
+struct-put: --guard-ID --guard-KEY --guard-SECRET struct-gen
 	stz put $(OUT_FILE) -id $(ID) -key $(KEY) -secret $(SECRET)
 
 install:
