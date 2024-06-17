@@ -5,3 +5,6 @@ syntax: glob
 target/
 .idea/
 .mvn/
+
+todo-service-goadesign/upload.sh
+todo-service-goadesign/design.json
