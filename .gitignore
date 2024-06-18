@@ -36,4 +36,5 @@ pom.xml.versionsBackup
 release.properties
 
 todo-service-goadesign/upload.sh
-todo-service-goadesign/design.json
+design.json
+design.layout.json
