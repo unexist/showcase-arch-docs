@@ -75,31 +75,37 @@ var _ = Design("Todo design", "This is a design of the todo service", func() {
 		SystemLandscapeView("SystemLandscapeView", "A System Landscape View", func() {
 			Title("Overview of the system landscape")
 			AddAll()
+			AutoLayout(RankLeftRight)
 		})
 
 		SystemContextView(system, "SystemContext", "A System Context diagram.", func() {
 			Title("Overview of the system")
 			AddAll()
+			AutoLayout(RankLeftRight)
 		})
 
 		ContainerView(system, "ContainerView", "A Container View", func() {
 			Title("Overview of the containers")
 			AddAll()
+			AutoLayout(RankLeftRight)
 		})
 
 		ComponentView(container_frontend, "ComponentView Frontend", "A Component View of the web frontend", func() {
 			Title("Overview of the frontend components")
 			AddComponents()
+			AutoLayout(RankLeftRight)
 		})
 
 		ComponentView(container_backend, "ComponentView Backend", "A Component View of the web backend", func() {
 			Title("Overview of the backend components")
 			AddComponents()
+			AutoLayout(RankLeftRight)
 		})
 
 		DeploymentView(Global, "Dev", "deployment", "A Deployment View", func() {
 			Title("Overview of the deployment on Dev")
 			AddAll()
+			AutoLayout(RankLeftRight)
 		})
 
 		Styles(func() {
