@@ -9,3 +9,5 @@ target/
 todo-service-goadesign/upload.sh
 design.json
 design.layout.json
+
+todo-service-goadesign/gen/
