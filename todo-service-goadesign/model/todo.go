@@ -14,8 +14,9 @@ package model
 import . "goa.design/model/dsl"
 
 var (
-	container_frontend interface{}
-	container_backend  interface{}
+	container_webserver interface{}
+	container_frontend  interface{}
+	container_backend   interface{}
 )
 
 var _ = Design("Todo design", "This is a design of the todo service", func() {
@@ -26,12 +27,9 @@ var _ = Design("Todo design", "This is a design of the todo service", func() {
 		Tag("system")
 		URL("https://unexist.blog")
 
-		Container("Webserver", "A webserver to deliver the frontend", "Nginx", func() {
+		container_webserver = Container("Webserver", "A webserver to deliver the frontend", "Nginx", func() {
 			Tag("infrastructure")
 			URL("https://nginx.org/")
-
-			Delivers("User", "Handles requests from", "HTTP", Asynchronous)
-			Delivers("User", "Delivers frontend to", "HTTP", Asynchronous)
 		})
 
 		container_frontend = Container("Web Frontend", "A Angular-based web frontend", "Angular + REST", func() {
@@ -70,6 +68,7 @@ var _ = Design("Todo design", "This is a design of the todo service", func() {
 		Tag("person")
 
 		Uses(system, "Uses")
+		Uses("Software System/Web Frontend", "Creates, views, edits and delete todos using", "HTTP", Asynchronous)
 	})
 
 	Views(func() {
