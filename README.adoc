@@ -8,8 +8,6 @@ This project is a showcase for various types of architecture documentation.
 - *todo-service-go-structurizr* - Showcase for Structurizr on Golang
 - *todo-service-goadesign* - Showcase for Goadesign on Golang
 
-This project holds a showcase for Structurizr related things.
-
 == Links
 
 - https://arc42.de
