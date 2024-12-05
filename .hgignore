@@ -11,3 +11,5 @@ design.json
 design.layout.json
 
 todo-service-goadesign/gen/
+
+*.bin
