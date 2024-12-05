@@ -1,9 +1,8 @@
 This diagram has been generated with go-structurizr 
 [https://github.com/krzysztofreczek/go-structurizr]
-
 @startuml
 
-title Service components
+title Todo service components
 
 skinparam {
   shadowing false
@@ -41,19 +40,19 @@ skinparam database<<INFRASTRUCTURE>> {
 }
 
 rectangle 0ADAPTER <<_GROUP>> {
-	artifact "==adapter.TodoResource\n<size:10>[component]</size>\n\nadapter component" <<ADAPTER>> as 3081293365
+	artifact "==adapter.TodoResource\n<size:10>[component]</size>\n\nadapter component" <<ADAPTER>> as 2945167943
 }
-rectangle 30812933651DOMAIN <<_GROUP>> {
-	usecase "==domain.TodoService\n<size:10>[component]</size>\n\ndomain component" <<DOMAIN>> as 2425084387
+rectangle 29451679431DOMAIN <<_GROUP>> {
+	usecase "==domain.TodoService\n<size:10>[component]</size>\n\ndomain component" <<DOMAIN>> as 2389247773
 }
-3081293365 .[#000000].> 2425084387 : ""
-rectangle 24250843872INFRASTRUCTURE <<_GROUP>> {
-	database "==infrastructure.TodoFakeRepository\n<size:10>[component]</size>\n\ninfrastructure component" <<INFRASTRUCTURE>> as 2184463684
+2945167943 .[#000000].> 2389247773 : ""
+rectangle 23892477732INFRASTRUCTURE <<_GROUP>> {
+	database "==infrastructure.TodoFakeRepository\n<size:10>[component]</size>\n\ninfrastructure component" <<INFRASTRUCTURE>> as 3040447786
 }
-2425084387 .[#000000].> 2184463684 : ""
-rectangle 24250843872DOMAIN <<_GROUP>> {
-	usecase "==domain.Todo\n<size:10>[component]</size>\n\ndomain component" <<DOMAIN>> as 542314480
+2389247773 .[#000000].> 3040447786 : ""
+rectangle 23892477732DOMAIN <<_GROUP>> {
+	usecase "==domain.Todo\n<size:10>[component]</size>\n\ndomain component" <<DOMAIN>> as 2365432198
 }
-2425084387 .[#000000].> 542314480 : ""
-2184463684 .[#000000].> 542314480 : ""
+2389247773 .[#000000].> 2365432198 : ""
+3040447786 .[#000000].> 2365432198 : ""
 @enduml
